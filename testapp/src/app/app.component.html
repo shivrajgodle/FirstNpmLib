@@ -1,1 +1,25 @@
-<lib-counter></lib-counter>
+
+
+
+<lib-counter [([(ngModel)]="binding")]></lib-counter>
+
+<h1>{{20 | usdInr: 74}}</h1>
+
+
+
+<h3>userDetails</h3>
+<ul *ngFor="let item of userDetails">
+
+  <app-user-deatils [user]='item'></app-user-deatils>
+
+</ul>
+
+<h3>customer details</h3>
+
+<ul *ngFor="let item1 of custDetails">
+
+  <app-customer-deatils [cust]='item1'></app-customer-deatils>
+
+</ul>
+
+

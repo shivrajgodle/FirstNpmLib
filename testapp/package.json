@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~12.0.5",
     "@angular/platform-browser-dynamic": "~12.0.5",
     "@angular/router": "~12.0.5",
+    "@shivrajgodle/mydemo-lib": "^0.0.1",
     "mydemo-lib": "file:../demoapplication/dist/mydemo-lib/mydemo-lib-0.0.1.tgz",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",

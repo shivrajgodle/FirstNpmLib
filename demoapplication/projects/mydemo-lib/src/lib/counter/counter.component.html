@@ -1,4 +1,12 @@
-<p>counter works!</p>
-<button (click)="onPlusClick()">+</button>
-<label>{{counter}}</label>
-<button (click)="onMinusClick()">-</button>
+
+
+
+  <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" (click)="onPlusClick()">
+    <mat-icon>add</mat-icon>
+  </button>
+  
+  <input type="text" readonly class="counter" value="{{clickCount}}">
+
+  <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" (click)="onMinusClick()">
+    <mat-icon>remove</mat-icon>
+  </button>

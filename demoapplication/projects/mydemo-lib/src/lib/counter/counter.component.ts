@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+
 
 @Component({
   selector: 'lib-counter',
@@ -6,18 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
+  @Output() countChanged: EventEmitter<any> = new EventEmitter();
+  clickCount:any =0;
 
-  counter:number=0;
   constructor() { }
 
   ngOnInit(): void {
   }
   onPlusClick(){
-    this.counter++;
+    this.clickCount++;
+    this.countChanged.emit(this.clickCount)
 
   }
   onMinusClick(){
-    this.counter--;
+    this.clickCount--;
+    this.countChanged.emit(this.clickCount);
   }
 
 }
