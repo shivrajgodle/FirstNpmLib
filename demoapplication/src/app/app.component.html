@@ -19,6 +19,33 @@
 <span>{{message}}</span>
 <lib-buttion [buttonText]='btnConfig' (click)="buttonClick()" [iconName]='icon'></lib-buttion>
 
+<br>
+<br>
+
+<lib-buttion [buttonText]='btnConfig1' (click)="buttonClick1()" [iconName]='icon1'></lib-buttion>
+
+<br>
+<br>
+
+<lib-buttion [buttonText]='btnConfig1' (click)="buttonClick1()" [iconName]='icon1'></lib-buttion>
+
+<br>
+<br>
+
+
+<form  (ngSubmit)="add()"[formGroup]="fmg">
+
+  <lib-ccinput-box [placeholderText]="'Credit card'" [cardNumber]="'CNumber'"  [iconText]="'credit_card'">
+
+  </lib-ccinput-box>
+
+  <br><br>
+  <button  mat-raised-button type="submit" color="primary">click here</button>
+
+</form>
+
+
+
 </div>
 
 
